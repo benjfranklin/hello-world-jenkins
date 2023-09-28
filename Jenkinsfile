@@ -1,7 +1,9 @@
 podTemplate(containers: [
     containerTemplate(
         name: 'ubuntu', 
-        image: 'ubuntu:latest'
+        image: 'ubuntu:latest',
+        command: 'sleep', 
+        args: '5m'
         )
   ]) {
 
