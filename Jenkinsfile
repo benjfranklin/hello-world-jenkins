@@ -1,13 +1,13 @@
 podTemplate(containers: [
     containerTemplate(
-        name: 'ansible', 
+        name: 'ubuntu', 
         image: 'ubuntu:latest'
         )
   ]) {
 
     node(POD_LABEL) {
-        stage('Testing Ansible') {
-            container('ansible') {
+        stage('Testing Ubuntu') {
+            container('ubuntu') {
                 stage('Shell Execution') {
                     sh '''
                     echo "hello world"
