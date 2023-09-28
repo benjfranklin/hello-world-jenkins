@@ -13,7 +13,6 @@ podTemplate(containers: [
             container('ansible') {
                 stage('Shell Execution') {
                     sh '''
-                    su ansible
                     export PATH="/home/ansible/.local/bin:$PATH"
                     ansible --version
                     '''
