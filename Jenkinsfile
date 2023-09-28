@@ -1,7 +1,7 @@
 podTemplate(containers: [
     containerTemplate(
         name: 'ansible', 
-        image: 'ansible/ansible'
+        image: 'ubuntu:latest'
         )
   ]) {
 
@@ -10,7 +10,7 @@ podTemplate(containers: [
             container('ansible') {
                 stage('Shell Execution') {
                     sh '''
-                    ansible --version
+                    echo "hello world"
                     '''
                 }
             }
