@@ -13,8 +13,9 @@ podTemplate(containers: [
             container('ansible') {
                 stage('Shell Execution') {
                     sh '''
-                    export PATH="/home/ansible/.local/bin:$PATH"
-                    ansible --version
+                        whoami
+                        echo $PATH
+                        ansible --version
                     '''
                 }
             }
