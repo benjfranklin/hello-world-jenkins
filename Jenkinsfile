@@ -3,8 +3,7 @@ podTemplate(containers: [
         name: 'ansible', 
         image: 'benjfranklin/jenkins-agent-ansible:1.1',
         command: 'sleep', 
-        args: '5m',
-        runAsUser: 'ansible'
+        args: '5m'
         )
   ]) {
 
