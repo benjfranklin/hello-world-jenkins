@@ -15,6 +15,7 @@ podTemplate(containers: [
                         whoami
                         echo $PATH
                         ansible --version
+                        which ansible-playbook
                     '''
                 }
             }
